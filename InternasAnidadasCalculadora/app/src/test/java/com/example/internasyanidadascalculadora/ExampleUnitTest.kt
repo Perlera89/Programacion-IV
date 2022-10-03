@@ -1,4 +1,4 @@
-package com.example.internasanidadascalculadora
+package com.example.internasyanidadascalculadora
 
 import org.junit.Test
 
