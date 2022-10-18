@@ -12,7 +12,7 @@ class AdminSqLite(Contex:Context?,
 
     override fun onCreate(db: SQLiteDatabase?) {
         //Creacion de BD
-        db?.execSQL("create table article(id int primary key,description text, price real)")
+        db?.execSQL("create table articles(id int primary key,description text, price real)")
     }
 
     override fun onUpgrade(p0: SQLiteDatabase?, p1: Int, p2: Int) {

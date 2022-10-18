@@ -14,26 +14,23 @@
         android:ems="10"
         android:hint="Ingresa el precio"
         android:inputType="numberDecimal"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etDescription"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/etDescription" />
 
     <EditText
         android:id="@+id/etDescription"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:layout_marginBottom="384dp"
         android:ems="10"
         android:hint="Ingrese la descripcion del producto"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etnId"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/etnId" />
 
     <EditText
         android:id="@+id/etnId"
@@ -43,36 +40,75 @@
         android:ems="10"
         android:hint="Ingresa un codigo"
         android:inputType="number"
+        android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btnRegister"
-        android:layout_width="134dp"
-        android:layout_height="49dp"
-        android:layout_marginTop="48dp"
-        android:onClick="registrar"
-        android:text="Registrar"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/btnSearch"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="40dp"
         android:backgroundTint="@color/teal_700"
+        android:onClick="buscar"
+        android:text="Buscar"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etnPrice"
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/btnSearch"
-        android:layout_width="119dp"
-        android:layout_height="43dp"
-        android:layout_marginTop="48dp"
-        android:text="Buscar"
+        android:id="@+id/btDelete"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:backgroundTint="#F44336"
+        android:onClick="eliminar"
+        android:text="Eliminar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etnPrice" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="120dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#2196F3"
+        android:onClick="registrar"
+        android:text="Registrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etnPrice" />
+
+    <Button
+        android:id="@+id/btEdit"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:backgroundTint="#FF9800"
+        android:onClick="modificar"
+        android:text="Editar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etnPrice" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="73dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="212dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.171"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnRegister"
-        android:backgroundTint="@color/teal_700"
-        app:layout_constraintVertical_bias="0.0" />
+        tools:srcCompat="@drawable/ic_next" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
