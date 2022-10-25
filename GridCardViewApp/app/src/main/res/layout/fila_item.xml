@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="10dp">
+    android:layout_margin="16dp">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -26,14 +26,15 @@
             android:textSize="16sp"
             android:text="Nombre"
             android:layout_centerHorizontal="true"/>
+
         <TextView
-            android:id="@+id/tvDescripcion"
+            android:id="@+id/tvDepartamento"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/tvNombre"
-            android:textSize="16sp"
-            android:text="Descripcion"
+            android:layout_centerHorizontal="true"
             android:padding="2dp"
-            android:layout_centerHorizontal="true"/>
+            android:text="Descripcion"
+            android:textSize="14sp" />
     </RelativeLayout>
 </androidx.cardview.widget.CardView>
