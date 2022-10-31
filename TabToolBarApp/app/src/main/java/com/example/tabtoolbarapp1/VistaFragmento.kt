@@ -1,4 +1,4 @@
-package com.example.tabtoolbarapp
+package com.example.tabtoolbarapp1
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,11 +7,12 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 
-class VIstaFragmento : Fragment() {
 
+class VistaFragmento : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
     }
 
     override fun onCreateView(
@@ -19,14 +20,15 @@ class VIstaFragmento : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_v_ista_fragmento, container, false)
+        return inflater.inflate(R.layout.fragment_vista_fragmento, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         arguments?.takeIf { it.containsKey(ARG_OBJECT) }?.apply {
-            val tvMensaje: TextView = view.findViewById(R.id.tvMensaje)
-            tvMensaje.text = "VIsta Fragmento " + getInt(ARG_OBJECT).toString()
+           val tvMensaje:TextView = view.findViewById(R.id.tv_Mensaje)
+            tvMensaje.text = "Vista Fragmento " + getInt(ARG_OBJECT).toString()
+
         }
     }
 
