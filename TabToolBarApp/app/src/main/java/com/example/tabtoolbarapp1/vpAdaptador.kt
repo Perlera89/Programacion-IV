@@ -18,5 +18,7 @@ class vpAdaptador(fa:FragmentActivity):FragmentStateAdapter(fa) {
             putInt(ARG_OBJECT,position+1)
         }
         return  fragmento
+
+
     }
 }
