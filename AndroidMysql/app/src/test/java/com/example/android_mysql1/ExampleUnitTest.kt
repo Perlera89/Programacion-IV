@@ -1,4 +1,4 @@
-package com.example.androidmysql
+package com.example.android_mysql1
 
 import org.junit.Test
 

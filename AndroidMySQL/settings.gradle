@@ -12,5 +12,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "AndroidMySQL"
+rootProject.name = "android_mysql1"
 include ':app'
