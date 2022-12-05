@@ -12,5 +12,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "AndroidFirebase"
+rootProject.name = "AndroidFirebase1"
 include ':app'

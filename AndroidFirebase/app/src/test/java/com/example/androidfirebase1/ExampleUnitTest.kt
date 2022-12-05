@@ -1,4 +1,4 @@
-package com.example.androidfirebase
+package com.example.androidfirebase1
 
 import org.junit.Test
 
